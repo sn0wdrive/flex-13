@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.25fr;
+  grid-template-rows: 1fr repeat(5, 1.5fr) 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+  "Header Header Header"
+  "Hero Main-Content Main-Content"
+  "Hero Main-Content Main-Content"
+  "Sidebar Main-Content Main-Content"
+  "Sidebar Extra-Content Extra-Content"
+  "Related-Images Related-Images Related-Posts"
+  "Footer Footer Footer";
+  height: 1000px;
+  background-color: black;
+  margin: 0;
+}
+
+.Header { 
+  grid-area: Header;
+  background-color: #e91e63;
+  position: relative;
+  margin: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.Hero { 
+  grid-area: Hero;
+  background-color: #d81b60;
+  position: relative;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.Main-Content { 
+  grid-area: Main-Content;
+  background-color: #c2185b;
+  position: relative;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.Sidebar { 
+  grid-area: Sidebar;
+  background-color: #ad1457;
+  position: relative;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.Extra-Content { 
+  grid-area: Extra-Content;
+  background-color: #880e4f;
+  position: relative;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.Related-Images {
+  grid-area: Related-Images;
+  background-color: #ff80ab;
+  position: relative;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.Related-Posts { 
+  grid-area: Related-Posts;
+  background-color: #ff4081;
+  position: relative;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.Footer { 
+  grid-area: Footer;
+  background-color: #f50057;
+  position: relative;
+  margin: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+}
+
+p {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-family: Arial;
+  font-size: 20px;
+}
